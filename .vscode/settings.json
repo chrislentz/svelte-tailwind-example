@@ -1,0 +1,17 @@
+{
+  "eslint.workingDirectories": [
+    "./wi"
+  ],
+  "eslint.options": {
+    "overrideConfigFile": "./wi/.eslintrc.cjs"
+  },
+  "prettier.configPath": "./wi/.prettierrc.cjs",
+  "css.validate": false,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+}
