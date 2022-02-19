@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.217.4/containers/javascript-node
+{
+	"name": "Node.js",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "main",
+	"workspaceFolder": "/workspace",
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "zsh",
+		"terminal.integrated.cursorBlinking": true
+	},
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"bradlc.vscode-tailwindcss",
+		"svelte.svelte-vscode"
+	],
+	"remoteUser": "node",
+	"postStartCommand": "npm install --prefix ./wi"
+}

@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VARIANT: '16-bullseye'
+    volumes:
+      - ..:/workspace:cached
+      - node_modules:/workspace/wi/node_modules
+    command: sleep infinity
+    ports:
+      - 3000:3000
+
+volumes:
+  node_modules:
