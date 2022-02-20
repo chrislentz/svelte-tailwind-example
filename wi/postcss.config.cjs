@@ -4,7 +4,7 @@ const tailwindcss = require('tailwindcss')
 
 module.exports = {
   plugins: [
-    tailwindcss(path.resolve(__dirname, './postcss.config.cjs')),
+    tailwindcss(path.resolve(__dirname, './tailwind.config.cjs')),
     autoprefixer
   ]
 }
