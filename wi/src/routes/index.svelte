@@ -7,5 +7,7 @@
 </div>
 
 <style lang="postcss">
-	@apply md:text-green-800;
+	h1 {
+		@apply md:text-green-800;
+	}
 </style>
